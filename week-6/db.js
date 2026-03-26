@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export const connectDb = async () => {
+const connectDb = async () => {
   try {
     mongoose.connect("mongodb://localhost:27017/backendFoundation");
     console.log(" MongoDB connected via Mongoose");
@@ -8,3 +8,4 @@ export const connectDb = async () => {
     console.error(" Connection failed:", err);
   }
 };
+export default connectDb;
