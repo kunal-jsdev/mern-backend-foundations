@@ -1,0 +1,23 @@
+{
+  "name": "mern-backend-foundations",
+  "version": "1.0.0",
+  "description": "A hands-on backend learning project built while following a structured 3-month Node.js + MongoDB roadmap. This repo covers MongoDB fundamentals, Mongoose ODM, RESTful API design, authentication with JWT, and advanced API concepts like validation, pagination, and role-based authorization.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunal-jsdev/mern-backend-foundations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kunal-jsdev/mern-backend-foundations/issues"
+  },
+  "homepage": "https://github.com/kunal-jsdev/mern-backend-foundations#readme",
+  "dependencies": {
+    "mongoose": "^9.3.3"
+  }
+}
