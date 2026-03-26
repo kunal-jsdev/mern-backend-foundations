@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Raj Mehta",
+    "age": 21,
+    "city": "Ahmedabad",
+    "email": "raj@gmail.com",
+    "role": "user",
+    "active": true
+  },
+  {
+    "name": "Priya Shah",
+    "age": 24,
+    "city": "Surat",
+    "email": "priya@gmail.com",
+    "role": "user",
+    "active": true
+  },
+  {
+    "name": "Arjun Patel",
+    "age": 19,
+    "city": "Ahmedabad",
+    "email": "arjun@gmail.com",
+    "role": "admin",
+    "active": true
+  },
+  {
+    "name": "Sneha Verma",
+    "age": 22,
+    "city": "Vadodara",
+    "email": "sneha@gmail.com",
+    "role": "user",
+    "active": false
+  },
+  {
+    "name": "Karan Joshi",
+    "age": 26,
+    "city": "Ahmedabad",
+    "email": "karan@gmail.com",
+    "role": "user",
+    "active": true
+  },
+  {
+    "name": "Meera Nair",
+    "age": 23,
+    "city": "Mumbai",
+    "email": "meera@gmail.com",
+    "role": "user",
+    "active": false
+  },
+  {
+    "name": "Dev Trivedi",
+    "age": 20,
+    "city": "Surat",
+    "email": "dev@gmail.com",
+    "role": "user",
+    "active": true
+  }
+]

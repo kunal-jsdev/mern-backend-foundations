@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Wireless Earbuds",
+    "price": 1299,
+    "category": "Electronics",
+    "stock": 50,
+    "rating": 4.5,
+    "createdAt": "new Date()"
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "price": 2999,
+    "category": "Electronics",
+    "stock": 20,
+    "rating": 4.7,
+    "createdAt": "new Date()"
+  },
+  {
+    "name": "Running Shoes",
+    "price": 1999,
+    "category": "Footwear",
+    "stock": 0,
+    "rating": 4.2,
+    "createdAt": "new Date()"
+  },
+  {
+    "name": "Backpack",
+    "price": 799,
+    "category": "Accessories",
+    "stock": 35,
+    "rating": 4.0,
+    "createdAt": "new Date()"
+  },
+  {
+    "name": "Water Bottle",
+    "price": 399,
+    "category": "Accessories",
+    "stock": 0,
+    "rating": 3.8,
+    "createdAt": "new Date()"
+  },
+  {
+    "name": "Desk Lamp",
+    "price": 649,
+    "category": "Home",
+    "stock": 15,
+    "rating": 4.1,
+    "createdAt": "new Date()"
+  },
+  {
+    "name": "USB Hub",
+    "price": 899,
+    "category": "Electronics",
+    "stock": 40,
+    "rating": 4.3,
+    "createdAt": "new Date()"
+  },
+  {
+    "name": "Notebook (A5)",
+    "price": 149,
+    "category": "Stationery",
+    "stock": 0,
+    "rating": 3.5,
+    "createdAt": "new Date()"
+  },
+  {
+    "name": "Hoodie",
+    "price": 1499,
+    "category": "Clothing",
+    "stock": 25,
+    "rating": 4.6,
+    "createdAt": "new Date()"
+  },
+  {
+    "name": "Phone Stand",
+    "price": 299,
+    "category": "Accessories",
+    "stock": 60,
+    "rating": 4.4,
+    "createdAt": "new Date()"
+  }
+]
