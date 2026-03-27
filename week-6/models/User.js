@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import bcrypt from "bcryptjs";
 
 const userSchema = new mongoose.Schema(
   {
@@ -16,6 +17,12 @@ const userSchema = new mongoose.Schema(
         /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
         "Please enter a valid email address",
       ],
+    },
+    password: {
+      type: String,
+      required: [true, "Password is required"],
+      minlength: [6, "Password must be at least 6 characters"],
+      select: false,
     },
     age: {
       type: Number,
@@ -39,8 +46,14 @@ const userSchema = new mongoose.Schema(
 );
 userSchema.pre("save", async function () {
   console.log(`Pre save Hook : about to save user: ${this.name} `);
+  if (!this.isModified("password")) return;
+  this.password = await bcrypt.hash(this.password, 12);
   this.name = this.name.trim();
 });
+
+userSchema.methods.comparePassword = async function (enteredPassword) {
+  return await bcrypt.compare(enteredPassword, this.password);
+};
 
 userSchema.post("save", function (doc) {
   console.log(`Post save hook — user saved successfully: ${doc.email}`);
