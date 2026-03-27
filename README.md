@@ -55,12 +55,8 @@ A hands-on backend learning project built while following a structured 3-month N
 node-mongo-rest-api/
 ├── week-5-mongodb-basics/
 ├── week-6-mongoose/
-├── week-7-rest-api/
-│   ├── controllers/
-│   ├── routes/
-│   ├── models/
-│   └── app.js
-├── week-8-advanced-api/
+ └── app.js
+├── week-7-and-week-8-advanced-api/
 │   ├── middleware/
 │   ├── controllers/
 │   ├── routes/
@@ -77,7 +73,7 @@ node-mongo-rest-api/
 
 ### Prerequisites
 - Node.js v18+
-- MongoDB (local) or a [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) account
+- MongoDB (local)
 
 ### Installation
 
@@ -108,6 +104,7 @@ npm run dev
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
+JWT_EXPIRES_IN=7d
 ```
 
 ---
