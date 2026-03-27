@@ -3,8 +3,21 @@ import { User } from "../../week-6/models/User.js";
 // GET /api/users
 export const getAllUsers = async (req, res, next) => {
   try {
-    const users = await User.find().select("-__v");
-    res.status(200).json({ success: true, count: users.length, data: users });
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
+
+    const total = await User.countDocuments();
+    const users = await User.find().select("-__v").skip(skip).limit(limit);
+
+    res.status(200).json({
+      success: true,
+      total,
+      page,
+      pages: Math.ceil(total / limit),
+      count: users.length,
+      data: users,
+    });
   } catch (err) {
     next(err);
   }
